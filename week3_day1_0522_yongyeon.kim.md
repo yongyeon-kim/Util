@@ -202,13 +202,12 @@ cu의 상점정보
 
 ##### 소스 )
 ```
-def bubble_sort(x):
-    length = len(x)-1
+li_index = len(li) - 1
 
-    for i in range(length):
-        for j in range(length-1):
-            if x[i] > x[j+1]:
-                x[j], x[j+1] = x[j+1], x[j]
+for i in range(li_index):
+    for j in range(li_index - i):
+        if li[j] > li[j+1]:
+            li[j], li[j+1] = li[j+1], li[j]
 ```
 
 ##### 정리 )
